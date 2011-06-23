@@ -1,0 +1,71 @@
+
+@font-face {
+  font-family: SketchRockwell;
+  src: url('http://www.zenelements.com/blog/images/tutorials/web/css3-introduction/SketchRockwell.ttf');
+  text-shadow: 3px 3px 7px #111;
+}
+
+#embed{
+  font-family: SketchRockwell;
+  font-size: 3.2em;
+  text-shadow: 3px 3px 7px #111;
+}
+
+#normal{font-family: Arial;}
+
+#shadow{text-shadow: 0.25em 0.25em 2px #999;}
+#cutout{color:white; text-shadow: 0em 0em 2em black;}
+
+#columns{
+  text-align: justify;
+  -webkit-column-count:4;
+  -webkit-column-gap:1em;
+}
+
+#round-border{
+  -webkit-border-radius:45px;
+  border:4px solid red;
+  padding: 12px;
+}
+
+.menue{
+  background-color: #ff0;
+  border-top-left-radius:15px;
+  border-top-right-radius:15px;
+  border: 4px solid #f00;
+  padding: 10px;
+  color:#f00;
+  text-decoration: none;
+  font-weight: bold;
+  margin:-2;
+}
+
+.menue:hover{
+  background-color: #f00;
+  border: 4px solid #ff0;
+  color:#ff0;
+}
+
+.transition-test{
+  -webkit-transition: color 2s linear;
+  font-size: medium;
+  color:#f00;
+}
+
+.transition-test:hover{
+  color:#00f;
+  font-size:  large;
+}
+
+
+
+@-webkit-keyframes bounce{from{left:0px;}to{left:400px;}}
+
+.animation{
+  -webkit-animation-name: bounce;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: 4;
+  -webkit-animation-direction: alternate;
+  position: relative;
+  left: 0px;
+}
